@@ -20,12 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7,<3 | >=3.4
+    - python >=3.6
   run:
     - click
     - pycparser
-    - python >=2.7,<3 | >=3.4
-    - six
+    - python >=3.6
 
 test:
   imports:
