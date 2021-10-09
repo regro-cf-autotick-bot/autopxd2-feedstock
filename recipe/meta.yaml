@@ -39,8 +39,6 @@ about:
   home: https://github.com/gabrieldemarmiesse/python-autopxd2
   summary: Automatically generate Cython pxd files from C headers
   license: MIT
-  # Drop vendored license file once this upstream issue is addressed
-  # xref: https://github.com/gabrieldemarmiesse/python-autopxd2/issues/26
   license_file: LICENSE
 
 extra:
