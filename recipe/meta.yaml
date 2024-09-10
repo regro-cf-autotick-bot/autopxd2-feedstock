@@ -1,5 +1,5 @@
 {% set name = "autopxd2" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/autopxd2-{{ version }}.tar.gz
-  sha256: c0c1440f4d99a125ca406b2e08a62ee8558c2e6cc7d58f3849eec63f6a0ade37
+  sha256: 863370d5d2e62e544f3e1155a03330f05cc846d5331f71f2c45ca9b8cdb84d66
 
 build:
   number: 0
