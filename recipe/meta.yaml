@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/autopxd2-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/autopxd2-{{ version }}.tar.gz
   sha256: c0c1440f4d99a125ca406b2e08a62ee8558c2e6cc7d58f3849eec63f6a0ade37
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - click
     - pycparser
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - autopxd --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/gabrieldemarmiesse/python-autopxd2
